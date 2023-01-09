@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/5384685fcb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToDo JS Project</title>
+</head>
+<body>
+    <div id="container">
+        <div id="aligncontainertxt">
+        <!-- <span id="backbtn">Back</span> -->
+        <h1 id="heading1"><span id="h1"> Tasks </span> <span id="h1i">Lists</span></h1>
+    
+        <!-- <span id="middletxt"> </span> -->
+
+        <p id="heading2"> 
+                <i class="fa-solid fa-circle-plus" id="plus" onclick="addTaskInput()"></i>
+                <!-- <img id="plus" src="./—Pngtree—vector add icon_4276496.png" alt="404" onclick="addTaskInput()"> -->
+                <span id="addcard" > Add Item</span>
+            </p>
+        </div>
+
+        <p id="homepgtxt">No items in the ToDo list</p>
+        <div id="list-container"></div>
+    </div>
+
+<!-- Add Task PopUp -->
+
+<div id="focus">   
+    <div id="container2">
+        <p id="i2txt">Add New List</p>
+        <input type="text" id="inputbox" placeholder="Add New item"> <br>
+        <button id="btn1" onclick="addDataObj()">Add</button>
+        <button id="btn2" onclick="closeDataObj()">Close</button>
+    </div>
+</div>
+
+    <!-- PopUP of adding items in list -->
+    <div id="focus2">   
+        <div id="container3">
+            <p id="i2txt">Add New Item</p>
+            <input type="text" id="inputbox2" placeholder="Add New item"> <br>
+            <button id="btn1-i">Add</button>
+            <button id="btn2-i">Close</button>
+        </div>
+    </div>
+
+
+    <!-- <div id="parent"></div> -->
+<script src="script.js"></script>   
+</div>
+</body>
+</html>
